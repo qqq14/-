@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>t.s_yphoto</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #DCABAE;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      text-align: center;
+      padding: 2em;
+    }
+
+    #price {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #000; /* Черный цвет текста */
+      text-align: center;
+    }
+
+    #instagram-container {
+      margin-top: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #instagram-link {
+      color: #000; /* Черный цвет текста */
+      text-decoration: none;
+      font-size: 1.2em;
+      display: flex;
+      align-items: center;
+    }
+
+    #instagram-icon {
+      width: 40px; /* Размер иконки Instagram */
+      margin-right: 5px;
+    }
+
+    #instagram-logo {
+      width: 40px; /* Размер логотипа Instagram */
+      margin-right: 5px;
+    }
+
+    #gallery {
+      display: flex;
+      flex-wrap: nowrap; /* Изменено на nowrap, чтобы фотографии располагались в ряд по ширине */
+      overflow: hidden; /* Скрытие полосы прокрутки */
+      margin: 0; /* Убран отступ */
+      padding-bottom: 20px; /* Добавлен отступ, чтобы не перекрывало последнюю фотографию */
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery-item img {
+      width: 40%; /* Измененная ширина картинки внутри блока */
+      height: auto; /* Автоматическая высота для поддержки пропорций */
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.2); /* Увеличение при наведении */
+    }
+
+    #video {
+      margin-top: 2em;
+    }
+
+    #video iframe {
+      width: 100%; /* Ширина видео на весь блок */
+      height: 450px; /* Высота видео увеличена */
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>t.s_yphoto</h1>
+  </header>
+
+ <section>
+  <h2>Мы в Instagram</h2>
+  <div id="instagram-container">
+    <a id="instagram-link" href="https://www.instagram.com/t.s_yphoto?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+      <img id="instagram-logo" src="C:\Users\qq\Desktop\Новая папка (2)\image\instagram.png" alt="Instagram Logo">
+    </a>
+  </div>
+</section>
+
+
+  <section>
+    <h2>Наши работы</h2>
+    <div id="gallery">
+      <!-- Ваши фотографии работы -->
+      <div class="gallery-item">
+        <img src="C:\Users\qq\Desktop\Новая папка (2)\image\photo_2023-12-20_16-15-31.jpg" alt="Работа 1">
+      </div>
+      <div class="gallery-item">
+        <img src="C:\Users\qq\Desktop\Новая папка (2)\image\photo_2023-12-20_16-15-39.jpg" alt="Работа 2">
+      </div>
+      <!-- Добавьте еще фотографии по аналогии -->
+    </div>
+  </section>
+
+  <section id="video">
+    <h2>Наши видео</h2>
+    <!-- Ваше видео с Vimeo -->
+    <iframe src="https://player.vimeo.com/video/896532762" width="560" height="315" frameborder="0" allowfullscreen autoplay></iframe>
+    <!-- Замените VIDEO_ID на реальный идентификатор вашего видео с Vimeo -->
+  </section>
+
+  <section>
+    <h2>Наши цены</h2>
+    <p id="price">
+      - 7 видео Reels с монтажом. <br>
+      - Создание фото для визуала в Instagram с индивидуальной обработкой. <br>
+      - Ведение актуальных. <br>
+      - 5 видео в TikTok - для поддержания активности. <br>
+      - Цена предоставляемых услуг за месяц - 300 BYN
+    </p>
+  </section>
+
+</body>
+
+</html>
